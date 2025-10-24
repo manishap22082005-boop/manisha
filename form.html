@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2-in-1 Registration & Users</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+  <!-- Registration Form Container -->
+  <div class="container" id="formContainer">
+    <h1>FORM VALIDATION</h1>
+    <h2>Create Account</h2>
+
+    <input type="text" id="name" placeholder="Name">
+    <div class="error" id="nameError"></div>
+
+    <input type="email" id="email" placeholder="Email">
+    <div class="error" id="emailError"></div>
+
+    <input type="password" id="password" placeholder="Password">
+    <div class="error" id="passwordError"></div>
+
+    <button id="registerBtn">Register</button>
+  </div>
+
+  <!-- Registered Users Container -->
+  <div class="container" id="usersContainer" style="display:none;">
+    <h2>Registered Users</h2>
+    <div class="users-list" id="usersList"></div>
+    <button id="backBtn">Back to Form</button>
+  </div>
+
+  <script src="form.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: #333;
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 50%;
+  max-width: 600px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #6a11cb;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.error {
+  color: red;
+  font-size: 0.85em;
+  margin-bottom: 10px;
+  min-height: 16px;
+}
+
+button {
+  width: 40%;
+  margin: 20px auto 0 auto;
+  padding: 12px 20px;
+  background: #2575fc;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6a11cb;
+}
+
+/* Users list layout: 3 cards per row */
+.users-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.user-card {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9em;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.user-card strong {
+  color: #6a11cb;
+  margin-bottom: 5px;
+}
+
+#backBtn {
+  margin-top: 20px;
+  display: block;
+  padding: 10px 20px;
+  background: #6a11cb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#backBtn:hover {
+  background: #2575fc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .users-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .users-list {
+    grid-template-columns: 1fr;
+  }
+}
